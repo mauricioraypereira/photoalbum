@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './Photo-Style.css'
+
 const Photo = ({data}) => {
   return (
     <div className="photos">
