@@ -3,12 +3,12 @@ import Photo from '../Photo/Photo'
 
 import './Photolist-Style.css'
 
-const Photolist = ({photosList}) => {
+const Photolist = ({photosList, setPhotoZoom}) => {
   return (
     <div className="album">
       {
         photosList.map((photo) => {
-          return <Photo key={photo.id} data={photo} />
+          return <Photo key={photo.id} data={photo} setPhotoZoom={setPhotoZoom} />
         })
       }
     </div>
