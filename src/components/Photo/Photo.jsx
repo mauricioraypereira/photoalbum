@@ -1,13 +1,23 @@
-import React from 'react'
+import PropTypes from 'prop-types';
+import './Photo-Style.css';
 
-import './Photo-Style.css'
+const Photo = ({ photo, setPhotoZoom }) => {
+    return (
+        <div className="photos" onClick={() => setPhotoZoom(photo)}>
+            <img src={photo.urls.small} alt={photo.alt_description} />
+        </div>
+    )
+};
 
-const Photo = ({data, setPhotoZoom}) => {
-  return (
-    <div className="photos" onClick={() => setPhotoZoom(data)}>
-        <img src={data.urls.small} alt={data.alt_description} />
-    </div>
-  )
-}
+Photo.propTypes = {
+    photo: PropTypes.shape({
+        id: PropTypes.string,
+        urls: PropTypes.shape({
+            small: PropTypes.string
+        }),
+        alt_description: PropTypes.string
+    }).isRequired,
+    setPhotoZoom: PropTypes.func.isRequired,
+};
 
-export default Photo
+export default Photo;
