@@ -5,7 +5,7 @@
 
 Álbum de Fotos é uma aplicação frontend construída durante o curso de **React JS com TypeScript Direto ao Ponto c/ projetos**, com o intuito de mostrar os conhecimento aprendidos.
 
-A aplicação consiste um Álbum de Fotos aonde você pode pesquisar por categoria, palavra chave ou por ambos e também pode dar zoom na imagem que você clicar.
+A aplicação consiste um Álbum de Fotos onde você pode pesquisar por categoria, palavra chave ou por ambos. Também poderá dar zoom na imagem clicada.
 
 ## Screenshots
 
